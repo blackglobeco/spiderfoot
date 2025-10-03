@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: spiderfoot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python sf.py -l 0.0.0.0:5000
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.5
