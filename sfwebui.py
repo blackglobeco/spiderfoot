@@ -106,6 +106,7 @@ class SpiderFootWebUi:
             .base_uri("'self'")
             .connect_src("'self'", "data:")
             .frame_src("'self'", 'data:')
+            .frame_ancestors("*")
             .img_src("'self'", "data:")
         )
 
